@@ -12,11 +12,13 @@
 </body>
 <script>
     var i=0;
+    if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)
+{
     setInterval(function(){
         i=i+1;
         document.getElementById("h1").innerHTML=i;
     },1000);
     // document.getElementById("snap")
-
+}
 </script>
 </html>
